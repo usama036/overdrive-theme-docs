@@ -30,6 +30,16 @@ if (search && searchableSections.length) {
 
 const supportForm = document.querySelector('[data-support-form]');
 if (supportForm) {
+  const attachment = supportForm.querySelector('[data-support-attachment]');
+  const attachmentLimit = 10 * 1024 * 1024;
+
+  attachment?.addEventListener('change', () => {
+    attachment.setCustomValidity(
+      attachment.files[0]?.size > attachmentLimit ? 'Choose a file smaller than 10 MB.' : ''
+    );
+    attachment.reportValidity();
+  });
+
   supportForm.addEventListener('submit', async event => {
     if (supportForm.action.includes('REPLACE_WITH_FORM_ID')) {
       event.preventDefault();
@@ -39,6 +49,11 @@ if (supportForm) {
     }
 
     event.preventDefault();
+    if (attachment?.files[0]?.size > attachmentLimit) {
+      attachment.setCustomValidity('Choose a file smaller than 10 MB.');
+      attachment.reportValidity();
+      return;
+    }
     const status = supportForm.querySelector('[data-form-status]');
     const submitButton = supportForm.querySelector('button[type="submit"]');
     const originalLabel = submitButton.innerHTML;
