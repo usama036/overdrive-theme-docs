@@ -1,11 +1,11 @@
-# Overdrive public documentation site
+# Routelle public documentation site
 
-Merchant documentation and support portal for the Overdrive Shopify theme. This public repository intentionally excludes the commercial theme source and release packages.
+Merchant documentation and support portal for the Routelle Shopify theme. This public repository intentionally excludes the commercial theme source and release packages.
 
 ## Live pages
 
-- [Theme documentation](https://usama036.github.io/overdrive-theme-docs/)
-- [Theme support](https://usama036.github.io/overdrive-theme-docs/support.html)
+- [Theme documentation](https://usama036.github.io/routelle-theme-docs/)
+- [Theme support](https://usama036.github.io/routelle-theme-docs/support.html)
 
 ## Maintenance
 
