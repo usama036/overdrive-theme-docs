@@ -90,8 +90,8 @@ h3 { font-size: 1.3rem; letter-spacing: -.025em; }
 .preset-card span { font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .preset-card h3 { margin: 6rem 0 .6rem; }
 .preset-card p { margin: 0; font-size: .85rem; line-height: 1.45; }
-.preset-card--ROUTELLE { background: #101410; color: #fff; }
-.preset-card--ROUTELLE span { color: var(--accent); }
+.preset-card--routelle { background: #101410; color: #fff; }
+.preset-card--routelle span { color: var(--accent); }
 .preset-card--biome { background: #eaf5ed; color: #17352c; }
 .preset-card--lustre { background: #f5e8dc; color: #39251d; }
 .info-grid, .feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; margin: 2rem 0; }
