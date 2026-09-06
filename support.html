@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Overdrive Shopify theme support.">
+    <meta name="theme-color" content="#0a0d0a">
+    <title>Overdrive theme support</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Overdrive documentation home"><span class="brand__mark" aria-hidden="true">↗</span><span>Overdrive</span><small>Theme documentation</small></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation"><a href="index.html#start">Getting started</a><a href="index.html#commerce">Commerce</a><a href="index.html#faq">FAQ</a><a class="nav-cta" href="support.html" aria-current="page">Get support</a></nav>
+    </header>
+
+    <main id="content" class="support-page">
+      <section class="support-intro">
+        <span class="eyebrow">Merchant support</span>
+        <h1>Tell us what’s happening.</h1>
+        <p>Include the store URL, theme version and steps to reproduce the issue. Clear details help us investigate faster.</p>
+        <div class="response-card"><span>Typical response</span><strong>Within two business days</strong><small>Critical reproducible theme defects are prioritized.</small></div>
+      </section>
+
+      <section class="support-form-card" aria-labelledby="support-form-title">
+        <div class="support-form-card__header"><div><span class="eyebrow">Support request</span><h2 id="support-form-title">How can we help?</h2></div><span class="secure-note">Information sent securely</span></div>
+        <form class="support-form" action="https://formspree.io/f/moeqnlpq" method="post" data-support-form>
+          <input type="hidden" name="_subject" value="Overdrive theme support request">
+          <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="field-grid">
+            <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label for="store-url">Shopify store URL</label><input id="store-url" name="store_url" type="url" inputmode="url" placeholder="https://store.myshopify.com" required><small>Use the permanent myshopify.com URL.</small></div>
+            <div class="field"><label for="version">Theme version</label><input id="version" name="theme_version" type="text" value="1.0.0" required></div>
+          </div>
+          <div class="field"><label for="topic">Topic</label><select id="topic" name="topic" required><option value="">Choose a topic</option><option>Theme setup</option><option>Layout or styling issue</option><option>Product or cart behavior</option><option>Localization or RTL</option><option>Accessibility</option><option>Theme defect</option><option>Other</option></select></div>
+          <div class="field"><label for="message">Issue details</label><textarea id="message" name="message" rows="8" placeholder="What did you expect, what happened, and which steps reproduce it?" required></textarea><small>Do not include passwords, access tokens, payment details or customer personal information.</small></div>
+          <label class="consent"><input type="checkbox" name="consent" required><span>I agree that these details may be used to respond to this support request.</span></label>
+          <button class="button" type="submit">Send support request <span aria-hidden="true">↗</span></button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </section>
+
+      <section id="policy" class="policy-section">
+        <div><span class="eyebrow">Support policy</span><h2>What standard support covers</h2></div>
+        <div class="policy-grid">
+          <article><span>Included</span><h3>Theme assistance</h3><ul><li>Questions about documented settings and sections</li><li>Help reproducing theme defects</li><li>Fixes for supported-browser compatibility issues</li><li>Guidance for native Shopify features supported by the theme</li></ul></article>
+          <article><span>Not included</span><h3>Custom services</h3><ul><li>Custom features or bespoke design work</li><li>Third-party app setup and app defects</li><li>Store strategy, SEO or conversion guarantees</li><li>Product content, legal advice or claims verification</li></ul></article>
+        </div>
+        <p>We may request a Shopify collaborator account when secure store access is required. Never send staff credentials or one-time authentication codes through this form.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>Overdrive</strong><p>Documentation for version 1.0.0.</p></div>
+      <nav aria-label="Footer navigation"><a href="index.html">Documentation</a><a href="support.html">Support</a><a href="#policy">Support policy</a></nav>
+      <p>© <span data-current-year>2026</span> Overdrive theme. Shopify is a trademark of Shopify Inc.</p>
+    </footer>
+  </body>
+</html>
